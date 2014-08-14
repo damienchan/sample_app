@@ -13,6 +13,9 @@ group :production do
   gem 'pg', '~>0.9.0'
 end
 
+gem 'ZenTest'
+gem 'autotest-rails-pure'
+gem 'autotest-growl'
 
 # Gems used only for assets and not required
 # in production environments by default.
