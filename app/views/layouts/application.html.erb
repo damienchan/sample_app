@@ -1,14 +1,16 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
-<head>
-  <title>SampleApp</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<%= stylesheet_link_tag    "application", :media => "all" %>
+<%= stylesheet_link_tag "slider" %>
+<%= javascript_include_tag "application" %>
+<%= javascript_include_tag "slider" %>
+<%= csrf_meta_tags %>
 
-<%= yield %>
+    <head>
+        <title>Chopstix Chinese Restaurant | <%= @title %></title>
+    </head>
+    <body onload="Slider();">
+        <%= yield %>
+    </body>
 
-</body>
 </html>
