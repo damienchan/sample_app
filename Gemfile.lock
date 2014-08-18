@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    ZenTest (4.10.1)
+    ZenTest (4.9.5)
     actionmailer (3.2.0)
       actionpack (= 3.2.0)
       mail (~> 2.4.0)
@@ -127,7 +127,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  ZenTest
+  ZenTest (~> 4.9.0)
   autotest-growl
   autotest-rails-pure
   coffee-rails (~> 3.2.1)

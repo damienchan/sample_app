@@ -13,7 +13,7 @@ group :production do
   gem 'pg', '~>0.9.0'
 end
 
-gem 'ZenTest'
+gem 'ZenTest', '~> 4.9.0'
 gem 'autotest-rails-pure'
 gem 'autotest-growl'
 
