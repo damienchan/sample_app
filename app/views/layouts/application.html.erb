@@ -6,11 +6,33 @@
 <%= javascript_include_tag "slider" %>
 <%= csrf_meta_tags %>
 
-    <head>
-        <title>Chopstix Chinese Restaurant | <%= @title %></title>
-    </head>
-    <body onload="Slider();">
-        <%= yield %>
+
+
+    <div id='cssmenu'>
+      <ul>
+        <li class='active'><a href='#'><span>Home</span></a></li>
+        <li><a href='#'><span>About Us</span></a></li>
+        <li><a href='#'><span>Menu</span></a></li>
+        <li class='last'><a href='#'><span>Contact Us</span></a></li>
+      </ul>
+    </div>
+
+    <body class="HolyGrail">
+        <head>
+          <title>Chopstix Chinese Restaurant | <%= @title %></title>
+        </head>
+        <div class="HolyGrail-body">
+          <main class="HolyGrail-content">
+
+            <body onload="Slider();">
+            <%= yield %>
+            </body>
+
+          </main>
+          <nav class="HolyGrail-nav"></nav>
+          <aside class="HolyGrail-ads"></aside>
+        </div>
+        <!--<footer>...</footer>-->
     </body>
 
 </html>
